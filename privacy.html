@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mavis Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --rule: #e5e5ea;
+    --accent: #0a66d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #a1a1a6;
+      --rule: #3a3a3c;
+      --accent: #5aa2ff;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  .date { color: var(--muted); margin-bottom: 28px; }
+  .summary {
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 16px 0;
+    margin: 0 0 8px;
+  }
+  code { font: 15px ui-monospace, SFMono-Regular, Menlo, monospace; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mavis Privacy Policy</h1>
+  <p class="date">Effective November 26, 2026</p>
+
+  <p>Mavis is an app for following and directing AI coding agents (such as Claude Code, Codex and opencode) that
+  run under herdr on computers you own or control. This policy explains what happens to your information when you
+  use it.</p>
+
+  <p class="summary"><strong>In short:</strong> Mavis collects nothing. It has no accounts, analytics, advertising
+  or tracking, and its developer runs no servers that your information goes to. Mavis talks only to the servers you
+  add, over SSH, and to Apple's iCloud if you keep sync on.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li>The servers you add: host, port, username, and what signs you in to them (an SSH key the app makes, a key
+    you paste, or a password), kept in the device's Keychain.</li>
+    <li>Conversations and images shown in the app, kept on the device so they open quickly, and the files and
+    photos you are about to send.</li>
+    <li>A log of what the app did (connections, timings, and errors by kind; never your messages, keys or
+    passwords). It leaves the device only if you share it yourself, from Settings → Share Log.</li>
+  </ul>
+  <p>Photos, the camera and files are used only when you choose to attach one.</p>
+
+  <h2>What goes to your servers</h2>
+  <p>Everything Mavis sends goes over an encrypted SSH connection to the servers you added: the messages you type,
+  the photos and files you attach (saved on that server, in <code>~/.cache/herdr-ios/uploads</code>), and your
+  answers to your agents' questions. From those servers Mavis reads your agents' conversations, their screens, and
+  the files their replies name, to show them to you.</p>
+  <p>What your agents then do with your messages, including sending them to their AI providers, depends on how you
+  set them up on your own computer and on those providers' terms, not on Mavis. Mavis can also ask an agent on your
+  server to write short summaries and reports of your sessions; that agent runs on your computer, under your own
+  account with its provider.</p>
+
+  <h2>iCloud</h2>
+  <p>With iCloud sync on (the default; you can turn it off in Settings), Mavis keeps your servers' settings, your
+  session reports and the agents you have hidden in your iCloud key-value storage, and your servers' sign-in
+  secrets in your iCloud Keychain, so that your other devices signed in to the same Apple ID have them. Apple
+  stores this under your Apple ID; the developer of Mavis has no access to it.</p>
+
+  <h2>On-device intelligence</h2>
+  <p>On devices with Apple Intelligence, Mavis uses Apple's on-device model to choose an emoji for each agent from
+  what it is working on. This happens on your device, and nothing is sent anywhere for it.</p>
+
+  <h2>Children</h2>
+  <p>Mavis is not directed at children, and it collects no information from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted at this address with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:m@7yu.io">m@7yu.io</a></p>
+</main>
+</body>
+</html>

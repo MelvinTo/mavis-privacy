@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mavis Demo</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #a1a1a6;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 16px 56px;
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); font-size: 15px; }
+  video {
+    display: block;
+    width: 100%;
+    max-height: 80vh;
+    margin: 20px auto 16px;
+    border-radius: 12px;
+    background: #000;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mavis in use</h1>
+  <p>Mavis follows and directs the AI coding agents (Claude Code, Codex, opencode) that run under herdr on your own
+  computer, over SSH. This two-minute tour on an iPad shows:</p>
+  <video src="mavis-demo.mp4" controls playsinline preload="metadata"></video>
+  <p class="muted">Adding a server (host, user and the app's own key) · agents' chats with code, tables and images ·
+  a message sent · a question answered from its card · a reply's HTML page · ⌘K to switch agents · a permission
+  prompt and the release notes it names · a new agent started and greeted. The agents in it are simulated.</p>
+  <p class="muted"><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
